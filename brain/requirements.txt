@@ -1,0 +1,30 @@
+# WebSocket server
+fastapi
+uvicorn[standard]
+
+# LLM
+requests
+openai
+anthropic
+pydantic
+
+# Voice — cloud (swap providers here later)
+deepgram-sdk        # STT + TTS in one SDK
+sounddevice         # mic input/audio output
+
+# VAD
+silero-vad          # detects when user starts/stops talking
+
+# Memory
+sqlmodel            # SQLite ORM
+chromadb            # vector store for long-term memory
+
+# File watching
+watchdog            # for file management tools
+
+# Utils
+python-dotenv
+
+# Dev only
+pyinstaller         # freezes brain/ into a binary for Tauri sidecar
+pytest
